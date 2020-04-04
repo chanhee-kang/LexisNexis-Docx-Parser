@@ -6,7 +6,10 @@ Download this git for initiating this program.
 ```
 $git clone https://github.com/ck992/LexisNexis-Docx-Parser.git
 ```
-Then, you have to download docx file(World Major Publication) from LexisNexis
+Then, you have to download docx file(World Major Publication) from LexisNexis.<br><br>
+The docx file looks like as following picture:
+<img width="654" alt="스크린샷 2020-04-04 오후 5 54 21" src="https://user-images.githubusercontent.com/26376653/78422856-62567e00-769d-11ea-86af-e1a0d408b9de.png">
+
 Also, you have to install python packages.
 ```
 $pip install
