@@ -4,7 +4,7 @@ LexisNeixs Docx parser is a tool that parses word(docx) format of LexisNexis's W
 ### Set up
 Download this git for initiating this program.
 ```
-$git clone https://github.com/ck992/LexisNexis-Docx-Parser.git
+$git clone https://github.com/chanhee-kang/LexisNexis-Docx-Parser.git
 ```
 Then, you have to download docx file(World Major Publication) from LexisNexis.<br><br>
 The docx file looks like as following picture:
