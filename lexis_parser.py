@@ -2,17 +2,7 @@
 import docx2txt
 import pandas as pd
 import os
-"""
-확인
-1. 10개 워드 도큐멘트테스트
-2. 각 도큐멘트의 제목, 퍼블리셔, 본문, 날짜 수집
-3. 국가는 mwp_list 에서 매칭되는국가 + 없으면 unknown처리
-3. 속도: 약 1초내외
 
-추가 개발
-1. 단일 파일로만 불러옴
-2. 9000+ 개에 전부 적용될지 확인 필요
-"""
 #files = []
 #
 #for file in os.listdir(r"C:\Users\Administrator\Desktop\docx\test_docx\test"):
@@ -23,7 +13,7 @@ import os
 #    text = docx2txt.process(files[i])
 #
 #text = docx2txt.process(files)
-text = docx2txt.process(r"C:\Users\Administrator\Desktop\docx\test_docx\major_pub_startup_50.docx")
+text = docx2txt.process("test.docx")
 
 content = []
 for line in text.splitlines():
@@ -98,7 +88,7 @@ for a in tmp:
 
 df = pd.DataFrame({'Publisher': publisher_list, 'Title': title_list, 'Date': date_list, 'Body' : body_list})
 
-country = pd.read_csv(r'C:\Users\Administrator\Desktop\docx\mwp_list.csv')
+country = pd.read_csv('mwp_list.csv')
 
 df_list = df.values.tolist()
 
